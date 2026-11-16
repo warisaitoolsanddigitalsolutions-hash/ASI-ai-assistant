@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASI - Artificial Smart Intelligence</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">✦ ASI</div>
+    <span>Artificial Smart Intelligence</span>
+    <button id="newChat">+ New Chat</button>
+  </header>
+
+  <main>
+    <section class="welcome" id="welcome">
+      <div class="orb">✦</div>
+      <h1>Welcome to <span>ASI</span></h1>
+      <p>Your AI. Your Brand. Your Future.</p>
+      <div class="suggestions">
+        <button onclick="suggest('Write a professional email')">✉ Write an email</button>
+        <button onclick="suggest('Explain artificial intelligence')">✧ Learn something</button>
+        <button onclick="suggest('Help me write code')">⌘ Coding help</button>
+        <button onclick="suggest('Translate this into Urdu')">文 Translation</button>
+      </div>
+    </section>
+
+    <section id="messages" aria-live="polite"></section>
+
+    <div class="composer">
+      <textarea id="prompt" placeholder="Ask ASI anything..." rows="1"></textarea>
+      <button id="send">➤</button>
+    </div>
+    <p class="notice">ASI Prototype · Connect an AI service for real answers</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
