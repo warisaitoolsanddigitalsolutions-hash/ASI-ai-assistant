@@ -1,0 +1,110 @@
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #081326;
+  color: #f4f5ff;
+  font-family: Arial, sans-serif;
+}
+header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px;
+  border-bottom: 1px solid #263653;
+}
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #a78bfa;
+}
+header span { color: #aab6cf; font-size: 12px; }
+header button {
+  margin-left: auto;
+  background: #202e49;
+  color: white;
+  border: 1px solid #445477;
+  padding: 10px;
+  border-radius: 10px;
+}
+main {
+  width: min(700px, 92%);
+  margin: auto;
+  padding: 35px 0;
+}
+.welcome {
+  text-align: center;
+  padding: 65px 0 35px;
+}
+.orb {
+  margin: auto;
+  width: 75px;
+  height: 75px;
+  display: grid;
+  place-items: center;
+  border-radius: 25px;
+  background: linear-gradient(135deg,#318cff,#9b62f5);
+  font-size: 38px;
+}
+h1 { font-size: 32px; }
+h1 span { color: #a78bfa; }
+.welcome p { color: #aab6cf; }
+.suggestions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+.suggestions button {
+  padding: 12px;
+  border: 1px solid #35476a;
+  border-radius: 12px;
+  background: #14233c;
+  color: white;
+}
+.composer {
+  display: flex;
+  gap: 10px;
+  background: #14233c;
+  border: 1px solid #52658b;
+  border-radius: 18px;
+  padding: 12px;
+  margin-top: 35px;
+}
+textarea {
+  flex: 1;
+  min-width: 0;
+  resize: vertical;
+  background: transparent;
+  color: white;
+  border: 0;
+  outline: none;
+  font-size: 16px;
+}
+#send {
+  border: 0;
+  border-radius: 12px;
+  width: 45px;
+  background: linear-gradient(135deg,#318cff,#9355ed);
+  color: white;
+  font-size: 22px;
+}
+.notice { text-align: center; color: #7888a5; font-size: 11px; }
+.message {
+  padding: 15px;
+  margin: 12px 0;
+  border-radius: 14px;
+  background: #172743;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.user { border-left: 3px solid #8b70ed; }
+.asi { border-left: 3px solid #3d9cff; }
+@media(max-width:450px) {
+  header { flex-wrap: wrap; }
+  header span { display: none; }
+  .welcome { padding-top: 35px; }
+  h1 { font-size: 26px; }
+}
